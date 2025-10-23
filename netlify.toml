@@ -1,0 +1,41 @@
+[build]
+  publish = "public" # or "dist" or "build" — adjust to your build output folder
+  command = "npm run build"
+
+# Redirect all requests to index.html for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Handle direct .html file requests (e.g., /about.html → /about)
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 200
+
+[[redirects]]
+  from = "/pricing.html"
+  to = "/pricing"
+  status = 200
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 200
+
+[[redirects]]
+  from = "/projects.html"
+  to = "/projects"
+  status = 200
+
+[[redirects]]
+  from = "/services.html"
+  to = "/services"
+  status = 200
+
+# Optional: Add a fallback for 404 pages (if you have a custom one)
+[[redirects]]
+  from = "/404"
+  to = "/index.html"
+  status = 200
