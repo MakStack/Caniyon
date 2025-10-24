@@ -1,0 +1,13 @@
+# robots.txt for https://www.caniyon.com
+
+User-agent: *
+Allow: /
+
+# Disallow system, test, or temporary directories (keeps crawlers focused on real content)
+Disallow: /404
+Disallow: /temp/
+Disallow: /drafts/
+Disallow: /private/
+
+# Sitemap location (main source of truth for search engines)
+Sitemap: https://www.caniyon.com/sitemap.xml
